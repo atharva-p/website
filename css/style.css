@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  border: 5px solid red;
+  /* to prevent vertical overflow, subtract total height of border 2 * 4.67 */
+  height: calc(100vh - 9.34px);
+  width: 75vw;
+
+  padding: 0;
+  margin: 0;
+}
+
+.child {
+    border: 5px solid pink; 
+    height: 10rem; 
+    width: 15rem; 
+
+    margin: 5px;            
+}
