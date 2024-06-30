@@ -6,10 +6,18 @@ body {
 .wrapper {
     display: grid; 
     /* gap: row-gap column-gap;  */
-    gap: 1em; 
-    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 1em 0; 
+    /* fit as many as you can */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
 
+    /* giving size. the grid-auto-rows or grid-auto-column specify the size of implicited created rows/columns*/
+    grid-auto-rows: minmax(100px, auto); 
     min-height: 100vh; 
+}
+
+.inner-box {
+    background-color: lightblue; 
+    border: 2px solid red; 
 }
 
 /* .one {
