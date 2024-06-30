@@ -43,6 +43,16 @@ aside {
   grid-area: aside;
 }
 
-article {
+.articles {
   grid-area: article;
+  gap: inherit;
+
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+}
+
+article {
+  padding: 10px;
+  border: 2px solid rgb(79 185 227);
+  border-radius: 5px;
 }
