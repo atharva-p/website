@@ -1,26 +1,87 @@
+/* classes for custom fonts */
+.fredericka-the-great-regular {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 400 to 900 */
+
+.playfair-display-heading {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.playfair-display-normal {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.jersey-20-charted-regular {
+  font-family: "Jersey 20 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gentium-book-plus-regular {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gentium-book-plus-bold {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gentium-book-plus-regular-italic {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.gentium-book-plus-bold-italic {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+html {
+  padding: none; 
+  margin: none; 
+}
+
 body {
-  padding: 0;
-  margin: 0;
+  padding: none;
+  margin: none;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, minmax(110px, auto));
+  padding: none;
+  margin: none;
 
-  gap: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: center; 
+  align-items: center; 
 }
 
-.container div {
-  border: 2px solid blue;
-  padding: 20px;
+#hello-text {
+  font-size: 20vw;
+  /* having a relative position so that #name will also follow this  */
+  position: relative; 
 }
 
-#subgrid {
-  display: grid;
-  grid-template-columns: subgrid;
-  grid-template-rows: 2fr 1fr;
-
-  grid-column: 1 / 4;
-  grid-row: 2 / 4;
+#name {
+  font-size: 3vw;
+  position: absolute;
+  right: 0px; 
 }
